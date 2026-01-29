@@ -1,0 +1,105 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  height: 3rem;
+
+  & input {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 999px;
+
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  & .slider {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    background-color: var(--input-stroke);
+
+    border-radius: 50%;
+    left: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    pointer-events: none;
+
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  & .label-text::before {
+    content: "Escuro";
+    font: var(--text-body-sm);
+    color: var(--text-heading);
+  }
+
+  &:has(input:checked) .label-text::before {
+    content: "Claro";
+  }
+
+  & input:checked + .slider {
+    transform: translateX(2rem) translateY(-50%);
+    background-color: var(--text-heading);
+  }
+
+  & input:checked {
+    background: var(--brand-light);
+    outline: 1px solid var(--input-stroke);
+  }
+}
+
+.flex-switch {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.input-wrapper,
+.file-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.terms-wrapper {
+  gap: 0.25rem;
+
+  & .checkbox-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    padding: 0.25rem 0;
+
+    & strong {
+      font-weight: 600;
+      color: var(--brand-light);
+      text-decoration: underline;
+    }
+
+    & [type="checkbox"] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    .checkbox-image {
+      flex: 0 0 1.25rem;
+      height: 1.25rem;
+      background-image: url("../../assests/icons/uncheked.svg");
+    }
+
+    &:has(:checked) {
+      .checkbox-image {
+        background-image: url(../../assests/icons/checked.svg);
+      }
+    }
+  }
+}

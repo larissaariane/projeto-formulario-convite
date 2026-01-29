@@ -1,0 +1,65 @@
+#app {
+  display: grid;
+  grid-template-columns: 35.94% 64.06%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+
+  margin: 1.25rem 1.25rem 1.25rem 0;
+  border-radius: 0.75rem;
+  background-color: var(--shape-body);
+
+  padding-inline: 8.125rem;
+  width: 51.25rem;
+  & .main-container {
+    max-width: 35rem;
+    margin-right: auto;
+  }
+
+  & h2 {
+    font: var(--text-heading-md);
+    color: var(--text-heading);
+    margin-top: 80px;
+  }
+}
+
+aside {
+  margin: 1.25rem;
+
+  & .aside-container {
+    max-width: 25rem;
+    margin-left: auto;
+    height: 100%;
+    border-radius: 0.75rem;
+
+    background: url("../assests/Background.svg") center / cover no-repeat;
+    /* background-image: url("../assests/Background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    padding-top: 2rem;
+    & header {
+      margin: 0 2rem;
+    }
+
+    & h1 {
+      font: var(--text-logo);
+      color: var(--pink);
+    }
+
+    & p {
+      font: var(--text-body-md);
+      font-weight: 300;
+      color: var(--text-heading);
+    }
+  }
+}
+
+main::-webkit-scrollbar {
+  display: none; /* Chrome / Safari */
+}
