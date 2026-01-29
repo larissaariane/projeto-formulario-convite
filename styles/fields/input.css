@@ -46,7 +46,8 @@ input[type="datetime-local"] {
 }
 
 input {
-  height: 48px;
+  height: 3rem;
+
   &::placeholder {
     color: var(--input-placeholder);
   }

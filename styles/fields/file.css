@@ -6,15 +6,13 @@
     height: 3rem;
 
     & .file-btn {
-      height: 40px;
+      height: 2.5rem;
       background: var(--shape-button);
       border-radius: 0.5rem;
       gap: 0.5rem;
       padding: 0.25rem 0.75rem;
-
       display: flex;
       align-items: center;
-
       cursor: pointer;
 
       & span {

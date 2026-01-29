@@ -28,7 +28,9 @@
     position: absolute;
     pointer-events: none;
 
-    transition: transform 0.3s, background-color 0.3s;
+    transition:
+      transform 0.3s,
+      background-color 0.3s;
   }
 
   & .label-text::before {
@@ -63,7 +65,6 @@
 .file-wrapper {
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
 }
 
 .terms-wrapper {

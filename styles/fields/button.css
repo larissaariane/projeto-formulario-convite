@@ -3,7 +3,7 @@ button {
   padding: 0.25rem 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  
+
   background-color: var(--brand-dark);
   font: var(--text-body-md);
   font-weight: 600;
@@ -16,6 +16,6 @@ button {
   margin-left: auto;
 
   &:hover {
-background: var(--brand-mid);
+    background: var(--brand-mid);
   }
 }

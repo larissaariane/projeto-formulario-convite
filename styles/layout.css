@@ -12,9 +12,9 @@ main {
   margin: 1.25rem 1.25rem 1.25rem 0;
   border-radius: 0.75rem;
   background-color: var(--shape-body);
-
   padding-inline: 8.125rem;
   width: 51.25rem;
+
   & .main-container {
     max-width: 35rem;
     margin-right: auto;
@@ -23,7 +23,7 @@ main {
   & h2 {
     font: var(--text-heading-md);
     color: var(--text-heading);
-    margin-top: 80px;
+    margin-top: 5rem;
   }
 }
 
@@ -37,12 +37,9 @@ aside {
     border-radius: 0.75rem;
 
     background: url("../assests/Background.svg") center / cover no-repeat;
-    /* background-image: url("../assests/Background.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 
     padding-top: 2rem;
+    
     & header {
       margin: 0 2rem;
     }
