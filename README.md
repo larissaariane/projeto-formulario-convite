@@ -7,6 +7,8 @@ O projeto foi desenvolvido como um desafio prático da formação Full-Stack da 
 
 ---
 
+<img width="1323" height="916" alt="image" src="https://github.com/user-attachments/assets/6723d1c3-0b8c-433e-a2d9-c989926caf14" />
+
 
 ## 🛠️ Tecnologias Utilizadas
 - HTML5  
